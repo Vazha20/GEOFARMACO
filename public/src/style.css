@@ -118,15 +118,21 @@ select {
 .text-decoration{
     text-decoration: none;
 }
-.bgColor{
-    
-        background-image: url('img/bgphoto.jpg');
-        background-size: cover; /* or contain */
-        background-repeat: no-repeat; /* prevents the image from repeating */
-        background-position: center; /* centers the image */
-    
+.bgImage{
+    background-image: url('img/bgphoto.jpg');
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+    background-position: center; /* centers the image */
     width: 100%;
     height: 600px;
+}
+.bgImageres{
+    background-image: url('img/bgphoto.jpg');
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+    background-position: center; /* centers the image */
+    width: 100%;
+    height: 1000px;
 }
 .aboutusBox {
     width: 400px;
@@ -140,11 +146,35 @@ select {
     color: white;
 }
 
+.aboutusBoxres {
+    width: 330px;
+    height: 400px;
+    margin-top: 100px;
+    background: rgba(0, 94, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 20px;
+    color: white;
+}
 
 .aboutusBoxCircle{
     margin-top: 100px;
     width: 400px; /* Set equal width and height */
     height: 400px;
+    background: rgba(0, 94, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 50%; /* Makes the box circular */
+   padding: 20px;
+    color:white;
+}
+
+.aboutusBoxCircleres{
+   
+    width: 330px; /* Set equal width and height */
+    height: 330px;
     background: rgba(0, 94, 255, 0);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px);
@@ -159,3 +189,4 @@ select {
 .mt{
     margin-top: 100px;
 }
+
