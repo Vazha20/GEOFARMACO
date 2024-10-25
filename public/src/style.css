@@ -111,7 +111,7 @@ select {
 }
 .statementBox{
     width: 300px;
-    height: 400px;
+    height: 450px;
     border: 1px solid black;
     border-radius: 6px;
 }
@@ -119,7 +119,7 @@ select {
     text-decoration: none;
 }
 .bgImage{
-    background-image: url('img/bgphoto.jpg');
+    background-image: url('img/bg.jpg');
     background-size: cover; /* or contain */
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position: center; /* centers the image */
@@ -127,7 +127,7 @@ select {
     height: 600px;
 }
 .bgImageres{
-    background-image: url('img/bgphoto.jpg');
+    background-image: url('img/bg.jpg');
     background-size: cover; /* or contain */
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position: center; /* centers the image */
@@ -189,4 +189,9 @@ select {
 .mt{
     margin-top: 100px;
 }
-
+.pad-text{
+    padding: 20px;
+}
+.gapImg{
+    height: 200px;
+}
