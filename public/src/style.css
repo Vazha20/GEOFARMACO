@@ -91,14 +91,7 @@ body {
 }
 
 
-.language-switcher {
-    margin: 20px;
-}
 
-select {
-    padding: 10px;
-    font-size: 16px;
-}
 .searchBar input{
     padding: 10px;
     width: 190px;
@@ -208,3 +201,19 @@ select {
     border: 1px solid black;
     border-radius: 6px;
 }
+
+
+
+
+
+.language-switcher {
+    margin: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
