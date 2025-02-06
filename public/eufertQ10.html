@@ -1,247 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="x-icon" href="./src/img/logo.png">
+    <link rel="shortcut icon" type="x-icon" href="./src/img/logotab.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>GeoFarmaco</title>
 </head>
 <body>
-   <section class="desktop-only">
+  
+
+ 
+
+<div class="container text-center loading" id="loading-spinner" style="display: none;">
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only"></span>
+  </div>
+</div>
+<div id="page-content">
+    
         <div class="container mt-2 d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center desktop-only">
-            <a href="./index.html" class="d-flex align-items-center"><img width="120px" src="./src/img/logo (2).jpeg"></a>
+            <div>
+            <a href="./index.html" class="d-flex align-items-center"><img width="120px" src="./src/img/logomain.jpeg"></a>
             </div>
-            <div class="d-flex align-items-center gap-3 text-decoration">
-                <div class="language-switcher">
-                  <select id="language-dropdown">
-                      <option value="en" data-flag="🇬🇧">English</option>
-                      <option value="ka" data-flag="🇬🇪">Georgian</option>
-                      <option value="it" data-flag="🇮🇹">Italian</option>
-                  </select>
-              </div>
-              </div>
-        </div>
-    </section>
-    <section class="response-only">
-        <div class="container mt-2 d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center desktop-only">
-            <a href="./index.html" class="d-flex align-items-center"><img width="60px" src="./src/img/logo (2).jpeg"></a>
+            
+            <div class="desktop-only">
+            <div class="d-flex">
+              <div class="language-switcher">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <img src="./src/img/united-kingdom.png" alt="English" title="Select Language"> English
+                        <span class="dropdown-arrow">&#9662;</span> <!-- Dropdown arrow icon -->
+                    </button>
+                    <div class="dropdown-content" id="languageDropdown">
+                        <a href="./ka/eufertQ10.html" onclick="switchLanguage(event)">
+                            <img src="./src/img/georgia.png" alt="ქართული"> ქართული
+                        </a>
+                        <a href="./it/eufertQ10.html" onclick="switchLanguage(event)">
+                          <img src="./src/img/italy.png" alt="Italian"> Italian
+                      </a>
+                   
+                  </div>
+                </div>
             </div>
-            <div class="d-flex align-items-center gap-3 text-decoration">
-                <div class="language-switcher">
-                  <select id="language-dropdown">
-                      <option value="en" data-flag="🇬🇧">English</option>
-                      <option value="ka" data-flag="🇬🇪">Georgian</option>
-                      <option value="it" data-flag="🇮🇹">Italian</option>
-                  </select>
-              </div>
-              </div>
         </div>
-    </section>
-     
-     
+      </div>
+      <div class="response-only">
+        <button class="dropbtn" onclick="toggleDropdownRes()">
+        <img src="./src/img/united-kingdom.png" alt="English" title="Select Language">
+        </button>
+     <div class="dropdown-contentRes" id="languageMenu">
+        <a href="./ka/eufertQ10.html" onclick="switchLanguageRes(event)">
+        <img src="./src/img/georgia.png" alt="Italian"> ქართული
+        </a>
+        <a href="./it/eufertQ10.html" onclick="switchLanguageRes(event)">
+        <img src="./src/img/italy.png" alt="Italian"> Italian
+        </a>
+      </div>
+  </div>
+      </div>
+  
+      
+ 
+                       
 
-
-
-    <div class="">
-        <div class="nav-colorProd">
-        <div class="container">
-            <nav class="d-flex justify-content-center align-items-center flex-wrap">
-              <ul class="nav-link d-flex text-decoration white mt-3 flex-wrap justify-content-center">
-                <li>
-                    <a href="#Uses">Uses</a>
-                </li>
-                <li>
-                    <a href="./personal.html">Active Ingredients</a>
-                </li>
-                <li>
-                    <a href="#Description">Description</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Bibliography</a>
-                </li>
-            </ul>
-            
-            </nav>  
-            
-    </div>
-    </div>
-<div class="desktop-only">
-    <div class="container mt-4 d-flex justify-content-center">
-        <h3>
-            EUFERT Q10 IS THE food supplement FORMULATED IN ORDER TO ENHANCE MALE FERTILITY</h3>
+        <div class="bgColor">
+    
+    <div class="nav-colorProd mt-2">
+      <div class="container">
+          <nav class="d-flex justify-content-center align-items-center flex-wrap">
+            <ul class="nav-link d-flex text-decoration white mt-3 flex-wrap justify-content-center">
+              <li>
+                  <a href="#Uses">Uses</a>
+              </li>
+              <li>
+                  <a href="">Active ingredients</a>
+              </li>
+              <li>
+                  <a href="#Description">Description</a>
+              </li>
+              <li>
+                  <a href="#Bibliography">Bibliography</a>
+              </li>
+          </ul>
+          
+          </nav>  
+          
+  </div>
+  </div>
+  <div class="desktop-only">
+    <div class="container mt-4">
+        <h3 class="text-center">EUFERT Q10 IS THE food supplement FORMULATED IN ORDER TO ENHANCE MALE FERTILITY</h3>
     </div>
 </div>
     
     <div class="response-only">
-        <div class="container d-flex justify-content-center">
-            <h3 class="mt-4">
-                EUFERT Q10 IS THE food supplement FORMULATED IN ORDER TO ENHANCE MALE FERTILITY</h3>
+        <div class="container mt-4">
+            <h3 class="text-center">EUFERT Q10 IS THE food supplement FORMULATED IN ORDER TO ENHANCE MALE FERTILITY</h3>
         </div>
     </div>
    
 <section id="Uses">
     <div class="container mt-3">
-        
-        <div class="Box d-flex flex-wrap align-items-center justify-content-center gap-3">
+        <div class="Box d-flex flex-wrap align-items-center justify-content-center">
             <div>
-                <div class="d-flex gap-2">
-                <img width="36px" src="./src/img/check.png">
-                <h3 class="mt-2">Uses</h3>
+                <div class="desktop-only">
+                    <div class="d-flex gap-2 align-items-center mt-3">
+                        <div>
+                            <img width="36px" height="36px" src="./src/img/check.png">
+                        </div>
+                        <div>
+                            <h3 class="mt-2">Uses</h3>
+                        </div>
+                    </div>
+                </div>   
+                <div class="response-only">
+                    <div class="d-flex gap-2 align-items-center justify-content-center mt-3">
+                        <div>
+                            <img width="36px" height="36px" src="./src/img/check.png">
+                        </div>
+                        <div>
+                            <h3 class="mt-2">Uses</h3>
+                        </div>
+                    </div>
                 </div>
-                <p class="mt-2">To improve male fertility in case of:</p>
-                <li>
-                <a>low sperm quality (Oligoastenoteratozoospermia)</a>
-                </li>
-                <li>
-                <a>ART protocol</a>
-                </li>
-                <li>
-                <a>varicocele (before and after surgery) stress</a>
-                </li>
+                <div>
+                    <ul class="mt-3">
+                       <li>low sperm quality (Oligoastenoteratozoospermia)</li>
+                       <li>ART protocol</li>
+                       <li>varicocele (before and after surgery) stress</li>
+                    </ul>
+                </div>
             </div>
-            <div class="desktop-only">
-                <img width="800px" src="./src/img/prod_0009_mockup-EuFert-a.jpg">
-            </div>
-            <div class="response-only">
-                <img width="300px" src="./src/img/prod_0009_mockup-EuFert-a.jpg">
-            </div>
+            <div>
+                <div class="desktop-only">
+                    <img width="400px" src="./src/img/prod_0009_mockup-EuFert-a.jpg">
+                </div>
+                <div class="response-only">
+                    <img width="280px" src="./src/img/prod_0009_mockup-EuFert-a.jpg">
+                </div>
+            </div>    
         </div> 
-    
-</div> 
+    </div> 
 </section>
 
-    <div class="container mt-5">
-        <div class="Box d-flex justify-content-center gap-3 align-items-center flex-wrap">
-            <div>
-                 <div class="d-flex gap-2">
-                    
-                        <img width="36px" src="./src/img/pages-1-32.png">
-               
-                    
-                        <h3 class="mt-2">How to use</h3>
-                   
-                 
-                 
-                 </div>
-                 <p class="mt-2">EuFert Q10, food supplement 
-                    formulated in order to enhance male fertility.
-                    One sachet per day.</p>
-            </div>
-            <div class="desktop-only">
-            <img width="550px" src="./src/img/eufert-img-ENG-min-1086x1536.jpg"> 
-            </div>
-            <div class="response-only">
-                <img width="300px" src="./src/img/eufert-img-ENG-min-1086x1536.jpg"> 
+    <section>
+        <div class="container mt-5">
+            <div class="Box d-flex flex-wrap gap-3 align-items-center justify-content-center">
+                <div>
+                    <div class="desktop-only">
+                        <div class="d-flex gap-2 align-items-center mt-3">
+                            <div>
+                                <img width="36px" height="36px" src="./src/img/check.png">
+                            </div>
+                            <div>
+                                <h3 class="mt-2">How to use</h3>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="response-only">
+                        <div class="d-flex gap-2 align-items-center justify-content-center mt-3">
+                            <div>
+                                <img width="36px" height="36px" src="./src/img/check.png">
+                            </div>
+                            <div>
+                                <h3 class="mt-2">How to use</h3>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="desktop-only">
+                        <p class="mt-2">
+                            EuFert Q10, food supplement formulated in order to <br> enhance male fertility.
+
+                            One sachet per day.
+                        </p>
+                    </div>
+                    <div class="response-only">
+                        <p class="mt-2 text-center">
+                            EuFert Q10, food supplement formulated in order to <br> enhance male fertility.
+
+                            One sachet per day.
+                        </p>
+                    </div>
                 </div>
-    </div>  
-    </div>
+                <div>
+                    <div class="desktop-only">
+                        <img width="400px" height="480px" src="./src/img/eufert-img-ENG-min-1086x1536.jpg"> 
+                    </div>
+                    <div class="response-only">
+                        <img width="280px" src="./src/img/eufert-img-ENG-min-1086x1536.jpg"> 
+                    </div>
+                </div>    
+            </div> 
+        </div> 
+    </section>
 
-<section>
-    <div class="container mt-5">
-        <div class="d-flex justify-content-center gap-3 align-items-start Box flex-wrap">
-            <div class="desktop-only"> 
-                <img width="600px" src="./src/img/historias-reales-min-1024x640.jpg">
-            </div>
-            <div class="response-only">
-                <img width="300px" src="./src/img/historias-reales-min-1024x640.jpg">
-            </div>
-            <div>
-              <div class="d-flex gap-2 align-items-center">
-              <img width="36px" src="./src/img/check.png">
-              <h3 class="mt-2">Risk factors</h3>
-              </div>
-              <p>To improve male fertility in case of:</p>
-              <li>
-              <a>varicocele</a>
-              </li>
-              <li>
-              <a>cryptorchidism</a>
-              </li>
-              <li>
-              <a>erectile dysfunction</a>
-              </li>
-              <li>
-              <a>scrotal hyperthermia</a>
-              </li>
-              <li>
-              <a>stress and environmental risks</a>
-              </li>
-              <li>
-              <a>lifestyle (smoking, sedentary life, unhealthy eating, obesity, alcohol and drug abuse)</a>
-              </li>
-              <li>
-              <a>sexually transmitted diseases</a>
-              </li>
-              <li>
-              <a>uro-seminal infections and epididymitis</a>
-              </li>
-              <li>
-              <a>genetic and hormonal causes</a>
-             </li>
-            </div>
-</div> 
-</div>
-</section>
+    <section id="Uses">
+        <div class="container mt-5">
+            <div class="Box d-flex flex-wrap gap-3 align-items-center justify-content-center">
+                <div>
+                    <div class="desktop-only">
+                        <img width="540px" src="./src/img/historias-reales-min-1024x640.jpg">
+                    </div>
+                    <div class="response-only">
+                        <img width="280px" src="./src/img/historias-reales-min-1024x640.jpg">
+                    </div>
+                </div>   
+                <div>
+                    <div class="desktop-only">
+                        <div class="d-flex gap-2 align-items-center">
+                            <div>
+                                <img width="36px" height="36px" src="./src/img/check.png">
+                            </div>
+                            <div>
+                                <h3 class="mt-2">Risk factors</h3>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="response-only">
+                        <div class="d-flex gap-2 align-items-center justify-content-center">
+                            <div>
+                                <img width="36px" height="36px" src="./src/img/check.png">
+                            </div>
+                            <div>
+                                <h3 class="mt-2">Risk factors</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                        <p class="text-center">The most common risk factors for male infertility are:</p>
+                        <ul>
+                            <li>varicocele</li>
+                            <li>cryptorchidism</li>
+                            <li>erectile dysfunction</li>
+                            <li>scrotal hyperthermia</li>
+                            <li>stress and environmental risks</li>
+                            <li>lifestyle (smoking, sedentary life, unhealthy <br> eating, obesity, alcohol and <br>drug abuse)</li>
+                            <li>sexually transmitted diseases</li>
+                            <li>uro-seminal infections and epididymitis</li>
+                            <li>genetic and hormonal causes</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+    </section>
+
+
+
+
 <section id="Description">
     <div class="container  mt-5">
-        <h3>Why EuFert?</h3>
-        <div class="d-flex flex-wrap gap-5 justify-content-center">
-        <div class="Width">
-        <p>Male infertility occurs whenever there is an alteration 
-            of normal production, maturation, motility and release 
-            of spermatozoa (1, 2). The cause of this spermatic alteration 
-            is multifactorial, but genetic, organic and environmental 
-            factors recognize the oxidative stress as a common factor. 
-            Oxidative stress occurs when reactive oxygen species (ROS, Reactive Oxygen Species) 
-            overcome the natural antioxidant defenses present in the seminal fluid and within the 
-            spermatozoon, causing cellular damage (3, 4): an alteration of the integrity of the 
-            spermatic DNA compromises the paternal genomic contribution to the embryo, which has a 
-            fundamental importance both in natural conception and in assisted reproduction techniques (ART). 
-            EuFert Q10 has a unique and specific formulation, made to provide an adequate supply 
-            of micronutrients (vitamins and minerals) able to improve male fertility.
-            EuFert Q10 contains Arginine (3g), a nitric oxide donor, a powerful vasodilating and 
-            antioxidanr agent; Coenzyme Q10 (200 mg) with antioxidant properties and able to improve 
-            count and sperm motility; L-Carnitine (300 g), which plays a fundamental role in the maturation 
-            of the spermatozoa and in their metabolism, improving their concentration and total count 
-            in subjects with asthenozoospermia (5, 6). EuFert Q10 also contains N-Acetylcysteine (600 mg), 
-            with antioxidant, anti-inflammatory and antibacterial properties; Selenium (0.04 mg) and Zinc 
-            (11.25 mg) which have a protective effect against cellular oxidative stress: their 
-            concentration in the fluid seminal is positively correlated to sperm concentration 
-            (7, 8, 9, 10). Male infertility requires a multi-modal and articulated therapy to cure all 
-            predisposing and precipitating factors. In particular, a healthy lifestyle, based on a varied 
-            diet rich in micronutrients, the regular physical exercise, the abstention from 
-            recreational toxicants and sexual protection are winning allies to improve male sexual health.
-            EuFert Q10, thanks to its exclusive formulation, helps to enhance fertility and procreative 
-            male capacity, reducing oxidative stress and ensuring a considerable</p>
+        <div>
+            <h3 class="text-center">Why EuFert?</h3>
         </div>
-        <div class="Width">
-           
-            <img height="262px"
-            width="300px" src="./src/img/eufertfig.png">
-            <p class="mt-5">improvement in fertilizing capacity (increased quality, 
-                number and motility of spermatozoa in the ejaculate), 
-                even in case of assisted reproductive technology.
-                Fig. 1 The organs that are part of the male reproductive 
-                system are located mostly outside the abdomen. The testicles, 
-                also called male gonads, have the task of producing sperm, and 
-                of secreting testosterone which, in humans, plays an essential 
-                role in regulating the development of sexual characteristics 
-                and the function of reproduction. Other accessories organs 
-                (epididymis, vas deferens, seminal vesicles, prostate, ducts 
-                ejaculators, urethra, urethral bulb glands and penis) 
-                contribute to produce the remaining components of the sperm, 
-                to preserve and nourish the spermatozoa and to transport 
-                the sperm inside the reproductive feminine system to achieve conception. A determining factor to 
-                carry out all these functions is maintaining a temperature within the scrotum lower than 1°C than the one in the abdomen.</p>
-    </div>
+            
+        <div>
+            <p>
+                Male infertility occurs whenever there is an alteration of normal production, maturation, motility and release of spermatozoa (1, 2). The cause of this spermatic alteration is multifactorial, but genetic, organic and environmental factors recognize the oxidative stress as a common factor. Oxidative stress occurs when reactive oxygen species (ROS, Reactive Oxygen Species) overcome the natural antioxidant defenses present in the seminal fluid and within the spermatozoon, causing cellular damage (3, 4): an alteration of the integrity of the spermatic DNA compromises the paternal genomic contribution to the embryo, which has a fundamental importance both in natural conception and in assisted reproduction techniques (ART). EuFert Q10 has a unique and specific formulation, made to provide an adequate supply of micronutrients (vitamins and minerals) able to improve male fertility.
 
-</div>
-</div>
+                EuFert Q10 contains Arginine (3g), a nitric oxide donor, a powerful vasodilating and antioxidanr agent; Coenzyme Q10 (200 mg) with antioxidant properties and able to improve count and sperm motility; L-Carnitine (300 g), which plays a fundamental role in the maturation of the spermatozoa and in their metabolism, improving their concentration and total count in subjects with asthenozoospermia (5, 6). EuFert Q10 also contains N-Acetylcysteine (600 mg), with antioxidant, anti-inflammatory and antibacterial properties; Selenium (0.04 mg) and Zinc (11.25 mg) which have a protective effect against cellular oxidative stress: their concentration in the fluid seminal is positively correlated to sperm concentration (7, 8, 9, 10). Male infertility requires a multi-modal and articulated therapy to cure all predisposing and precipitating factors. In particular, a healthy lifestyle, based on a varied diet rich in micronutrients, the regular physical exercise, the abstention from recreational toxicants and sexual protection are winning allies to improve male sexual health.
+                
+                EuFert Q10, thanks to its exclusive formulation, helps to enhance fertility and procreative male capacity, reducing oxidative stress and ensuring a considerable improvement in fertilizing capacity (increased quality, number and motility of spermatozoa in the ejaculate), even in case of assisted reproductive technology.
+                
+                
+                Fig. 1 The organs that are part of the male reproductive system are located mostly outside the abdomen. The testicles, also called male gonads, have the task of producing sperm, and of secreting testosterone which, in humans, plays an essential role in regulating the development of sexual characteristics and the function of reproduction. Other accessories organs (epididymis, vas deferens, seminal vesicles, prostate, ducts ejaculators, urethra, urethral bulb glands and penis) contribute to produce the remaining components of the sperm, to preserve and nourish the spermatozoa and to transport the sperm inside the reproductive feminine system to achieve conception. A determining factor to carry out all these functions is maintaining a temperature within the scrotum lower than 1°C than the one in the abdomen.
+            </p>
+        </div>
+       
+
+
+    </div>
 </section>
+
+
+
+
+
 
       <footer class="text-center text-lg-start text-white mt-5" style="background-color: #1c2331">
 
@@ -249,10 +287,10 @@
         
           <div class="d-flex gap-3">
             <div>
-                <a href="https://www.facebook.com/profile.php?id=61550469996505" target="_blank"><img width="20px" src="./src/img/facebook.png"></a>  
+                <a href="#" target="_blank"><img width="20px" src="./src/img/facebook.png"></a>  
             </div>
             <div>
-                <a href="https://www.instagram.com/bepro.geo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img width="20px" src="./src/img/instagram.png"></a>      
+                <a href="#" target="_blank"><img width="20px" src="./src/img/instagram.png"></a>      
             </div>
             <div>
                 <a><img width="20px" src="./src/img/whatsapp.png"></a>     
@@ -266,37 +304,33 @@
             <div class="row mt-3">
               
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" >
-                <div class="desktop-only text-decoration">
-                <a class="d-flex align-items-center text-white text-center" href="./index.html"><p class="CircleColor">GEO</p>
-                <p>FARMACO</p></a>
+                <div class="ff">
+                <a href="./ka/index.html"><img width="120px" src="./src/img/logo.jpeg"></a>
               </div>
-              <div class="response-only text-decoration">
-                <a class="d-flex justify-content-center align-items-center text-white" href="./index.html"><p class="CircleColor">GEO</p>
-                <p class="fontforName text">FARMACO</p></a>
               </div>
-               
-              </div>
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="fw-bold mb-4 text">
                   Menu
                 </h6>
                 <p>
-                  <a href="./owner" class="text-white">Our Company</a>
+                  <a href="./ka/index.html" class="text-white">About Us</a>
                 </p>
                 <p>
-                  <a href="./players" class="text-white">Products</a>
+                  <a href="./ka/products.html" class="text-white">Products</a>
                 </p>
                 <p>
-                  <a href="./footcamps" class="text-white">Geo Farmaco in the World</a>
+                  <a href="#" class="text-white">GeoFarmaco in the World</a>
                 </p>
                
               </div>
              
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
-                <h6 class="fw-bold mb-4 text">Contact</h6>
-                <p class="text-white">Email: <a class="text-white">info@geofarmaco.com</a></p>
+                <h6 class="fw-bold mb-4 text">Contacts</h6>
+                <p class="text-white">Email: <a class="text-white">info@geofarmaco.ge</a></p>
+                <p class="text-white">Phone: <a class="text-white">+995 599 00 77 15</a></p>
                 
                 <p></p>
                 <p></p>
@@ -305,10 +339,15 @@
           </div>
         </section>
         <div class="text-center padding-text" style="background-color: rgba(0, 0, 0, 0.2)">
-         <p class="text-white">All rights reserved © GEOFARMACO</p>
+         <p class="text-white Rules">All rights reserved © GEOFARMACO</p>
         </div>  
       </footer>
-    <script type="module" src="./script.js"></script>
+</div>
+</div>
+
+ 
+    <script src="./script.js"></script>
+    <script src="./language.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

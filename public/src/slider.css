@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.productSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 70px 55px;
+}
+.slider-wrapper a{
+  text-decoration: none;
+}
+.card-list a{
+  text-decoration: none;
+}
+.card-list .card-item {
+  color: black;
+  user-select: none;
+  width: 300px;
+  height: 460px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  border: 3px solid #00496b;
+  
+}
+.card-listGeo a{
+  text-decoration: none;
+}
+.card-listGeo .card-itemGeo {
+  color: black;
+  user-select: none;
+  width: 300px;
+  height: 560px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  border: 3px solid #00496b;
+  
+}
+
+.user-image{
+  width: 80%;
+  height: 220px;
+  margin-bottom: 24px;
+  border-radius: 10px 10px 0px 0px;
+}
+.user-imageGeo{
+  width: 80%;
+  height: 200px;
+  border-radius: 10px 10px 0px 0px;
+}
+.slider-wrapper .swiper-pagination-bullet {
+  background: black;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.slider-wrapper .swiper-slide-button {
+  color: #000000;
+  margin-top: -55px;
+  transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: #4658ff;
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+
+.card-item:hover{
+   
+    transform: scale(1.02);
+    transition: all ease 0.3;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.sliderText p{
+  width: 90%;
+}
+
+
+

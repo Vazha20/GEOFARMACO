@@ -1,13 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Slabo+27px&display=swap');
 body {
     margin: 0;
     padding: 0;
 }
 .nav-link{
     list-style: none;
-    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
     gap: 30px;
 }
-
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h4{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h5{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h6{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 .nav-link a{
     font-size: larger;
     font-weight: bold;     
@@ -19,13 +37,13 @@ body {
     padding: 26px 12px 8px;
 }
 .nav-color {
-    background-color: #00b0ff;
+    background-color: #00496b;
     color: white;    
     width: 100%; 
     height: 80px;
 }
 .nav-colorProd {
-    background-color: #00b0ff;
+    background-color: #00496b;
     color: white;    
     width: 100%; 
     max-height: 200px;
@@ -33,7 +51,7 @@ body {
 .btn-primary{
     padding: 20px;
     border-radius: 30px;
-    background-color: #00b0ff;
+    background-color: #00496b;
     color: white;
     border-style: none;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -80,114 +98,98 @@ body {
         display: block;
     }
 }
-.CircleColor{
-    width: 70px;
-    height: 70px;
-    font-size: xx-large;
-    background-color: #00b0ff;
-    border-radius: 50px;
-    padding: 10px 0px;
-   
-}
-
-
-
-.searchBar input{
-    padding: 10px;
-    width: 190px;
-    height: 35px;
-    border-radius: 10px;
-    border-style: none;
-}
-.searchBar{
-    gap:12px;
-    display: flex;
-    align-items: start;
-    
-}
-.carousel-item img{
-    width: 100%;
-    height: 600px; 
-}
 .statementBox{
     width: 300px;
     height: 450px;
-    border: 1px solid black;
-    border-radius: 6px;
+    border: 3px solid #00496b;;
+    border-radius: 10px;
+    background-color: white;
+}
+.statementBoxGeo{
+    width: 300px;
+    height: 620px;
+    border: 3px solid #00496b;;
+    border-radius: 10px;
+    background-color: white;
 }
 .text-decoration{
     text-decoration: none;
 }
 .bgImage{
-    background-image: url('img/bg.jpg');
+    background: rgb(0,73,107);
+    background: linear-gradient(180deg, rgba(0,73,107,1) 15%, rgba(0,97,143,1) 38%, rgba(190,190,193,1) 100%);
     background-size: cover; /* or contain */
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position: center; /* centers the image */
     width: 100%;
-    height: 600px;
+    height: 520px;
 }
 .bgImageres{
-    background-image: url('img/bg.jpg');
+    background: rgb(0,73,107);
+    background: linear-gradient(180deg, rgba(0,73,107,1) 15%, rgba(0,97,143,1) 38%, rgba(190,190,193,1) 100%);
     background-size: cover; /* or contain */
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position: center; /* centers the image */
     width: 100%;
-    height: 1000px;
+    height: 900px;
 }
 .aboutusBox {
     width: 400px;
     height: 400px;
-    margin-top: 100px;
-    background: rgba(0, 94, 255, 0);
+    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.78);
+    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
     padding: 20px;
     color: white;
 }
-
 .aboutusBoxres {
     width: 330px;
     height: 400px;
-    margin-top: 100px;
-    background: rgba(0, 94, 255, 0);
+    margin-top: 132px;
+    background: rgba(0, 0, 0, 0.78);
+    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);;
     padding: 20px;
     color: white;
 }
-
 .aboutusBoxCircle{
-    margin-top: 100px;
+    margin-top: 40px;
     width: 400px; /* Set equal width and height */
     height: 400px;
-    background: rgba(0, 94, 255, 0);
+    background: rgba(0, 0, 0, 0.78);
+    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
     border-radius: 50%; /* Makes the box circular */
-   padding: 20px;
+    padding: 20px;
     color:white;
 }
-
 .aboutusBoxCircleres{
-   
     width: 330px; /* Set equal width and height */
     height: 330px;
-    background: rgba(0, 94, 255, 0);
+    background: rgba(0, 0, 0, 0.78);
+    border-radius: 50%;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 50%; /* Makes the box circular */
-   padding: 20px;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    padding: 20px;
     color:white;
 }
 .forBox{
     gap:80px;
 }
+.forBoxRes{
+    gap:60px;
+}
+
 .mt{
-    margin-top: 100px;
+    margin-top: 110px;
 }
 .pad-text{
     padding: 20px;
@@ -197,23 +199,185 @@ body {
 }
 
 .Box{
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 6px;
-}
-
-
-
-
-
-.language-switcher {
-    margin: 20px;
-}
-
-select {
     padding: 10px;
-    font-size: 16px;
+    border: 3px solid #00496b;
+    border-radius: 10px;
+    background-color: white;
 }
 
+#loading-spinner {
+    display: none; /* Hide the spinner by default */
+    font-size: 16px;
+    color: #007bff; /* You can customize the color */
+   margin-top: 250px;
+    
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 160px; /* Increased to accommodate the arrow */
+    border: 3px solid #00496b;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: white;
+    
+}
+.dropdownRes {
+    position: relative;
+    display: inline-block;
+    width:62px; /* Increased to accommodate the arrow */
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 6px;
+    
+}
 
+.dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Aligns text and flag vertically */
+    justify-content: space-between; /* Spaces out the flag, text, and arrow */
+    width: 100%;
+}
+.dropbtnRes {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+    
+}
 
+.dropbtn img {
+    width: 32px;
+    height: 32px;
+     /* Space between flag and text */
+}
+.dropbtnRes img {
+    width: 32px;
+    height: 32px;
+     /* Space between flag and text */
+}
+
+.dropdown-arrow {
+    font-size: 20px;
+    
+    transition: transform 0.3s ease; /* Smooth rotation for arrow */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 3px solid #00496b;
+    min-width: 160px;
+    margin-top: 20px;
+    right: -8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+.dropdown-contentRes {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 3px solid #00496b;
+    min-width: 160px;
+    margin-top: 20px;
+    right: 6px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.dropdown-contentRes a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.dropdown-content a:hover {
+    background-color: rgb(165, 161, 161);
+}
+.dropdown-contentRes a:hover {
+    background-color: rgb(165, 161, 161);
+}
+
+.dropdown-content img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.dropdown-contentRes img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+/* Rotate the arrow when the dropdown is open */
+.dropdown-content.show-arrow .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.content {
+    margin-top: 50px;
+}
+.bgColor{
+    background-color: #bebec1;
+}
+
+.ff img{
+    border-radius: 10px;
+    border: 3px solid #00496b;;
+}
+.subsResfor input{
+    border: 3px solid #00496b;
+    border-radius: 20px;
+    width: 240px;
+    height: 60px;
+}
+
+.subsDeskfor input {
+    border: 3px solid #00496b;
+    border-radius: 20px;
+}
+.subsResfor button{
+    padding: 20px;
+    width: 240px;
+    border-radius: 30px;
+    background-color: #00496b;
+    color: white;
+    border-style: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold; 
+}
+.Iso img{
+    border: 3px solid #00496b;
+    border-radius: 10px;
+}
+.horLine{
+  
+            width: 100%;
+            height: 50px; /* სიმაღლე, რომ გამოიხატოს მრუდი */
+            background-color: #00496b;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+.marginTop{
+    margin-top: 66px;
+}
+
+.pad-text a{
+    bottom: 0px;
+}
+.Num{
+    list-style:none;
+}
